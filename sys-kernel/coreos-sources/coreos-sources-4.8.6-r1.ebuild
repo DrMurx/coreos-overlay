@@ -22,6 +22,7 @@ PATCH_DIR="${FILESDIR}/${KV_MAJOR}.${KV_MINOR}"
 
 # in $PATCH_DIR: ls -1 | sed -e 's/^/\t${PATCH_DIR}\//g' -e 's/$/ \\/g'
 UNIPATCH_LIST="
+        ${PATCH_DIR}/jenkins-fix.patch \
         ${PATCH_DIR}/z0001-security-overlayfs-provide-copy-up-security-hook-for.patch \
         ${PATCH_DIR}/z0002-selinux-Implementation-for-inode_copy_up-hook.patch \
         ${PATCH_DIR}/z0003-security-overlayfs-Provide-security-hook-for-copy-up.patch \
